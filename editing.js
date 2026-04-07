@@ -59,43 +59,43 @@ const projects = [
   {
     title: 'Wedding Highlight Reel',
     cat: 'long',
-    video: 'images/Video Project 6/Exports/Video Project 6.mp4',
+    video: 'https://res.cloudinary.com/dmtcpwldk/video/upload/v1775586324/Video_Project_6_y1x4tw.mp4',
     type: 'landscape',
   },
   {
     title: 'YouTube Documentary',
     cat: 'short',
-    video: 'images/sample 3.mp4',
+    video: 'https://res.cloudinary.com/dmtcpwldk/video/upload/v1775586336/sample_3_bgfe2c.mp4',
    type: 'landscape',
   },
   {
     title: 'Brand Cinematic Grade',
     cat: 'color',
-    video: 'images/4ff978b528984570242c47e925e9566d_720w.mp4',
+    video: 'https://res.cloudinary.com/dmtcpwldk/video/upload/v1775586317/4ff978b528984570242c47e925e9566d_720w_kqpfpb.mp4',
     type: 'landscape',
   },
   {
     title: 'UGC Marketing Video',
     cat: 'corporate',
-    video: 'images/money.mp4',
+    video: 'https://res.cloudinary.com/dmtcpwldk/video/upload/v1775586310/money_fjqytd.mp4',
     type: 'landscape',
   },
   {
     title: 'Travel Vlog — Jaipur',
     cat: 'short',
-    video: 'images/travel sample 4.mp4',
+    video: 'https://res.cloudinary.com/dmtcpwldk/video/upload/v1775586317/travel_sample_4_tfhlb2.mp4',
     type: 'landscape',
   },
   {
     title: 'Instagram Reel Cuts',
     cat: 'short',
-    video: 'images/15226557_1920_1080_24fps.mp4',
+    video: 'https://res.cloudinary.com/dmtcpwldk/video/upload/v1775586313/15226557_1920_1080_24fps_z6ule3.mp4',
     type: 'portrait',
   },
   {
     title: 'Car cutting and grading',
     cat: 'color',
-    video: 'images/bmw.mp4',
+    video: 'https://res.cloudinary.com/dmtcpwldk/video/upload/v1775586312/bmw_jupjf6.mp4',
     type: 'landscape',
   },
   {
@@ -107,14 +107,14 @@ const projects = [
   {
     title: 'Fitness Motivational',
     cat: 'short',
-    video: 'images/gym.mp4',
+    video: 'https://res.cloudinary.com/dmtcpwldk/video/upload/v1775586314/gym_ohpt6h.mp4',
     type: 'landscape',
 
   },
     {
     title: 'Ads Teaser Cut',
     cat: 'short',
-    video: 'images/client video 1.mp4',
+    video: 'https://res.cloudinary.com/dmtcpwldk/video/upload/v1775586335/client_video_1_fkodrz.mp4',
     type: 'landscape',
 
   },
