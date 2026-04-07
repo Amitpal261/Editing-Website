@@ -73,7 +73,19 @@ xdg-open index.html  # Linux
 | **Contact** | `contact` | Two-column layout with contact info + validated form |
 
 ---
+## PREVIEW PROJECTS 
 
+# HOME
+![Home Screenshot](public/assest/home.png)
+
+# PORTFOLIO
+![Portfolio Screenshot](public/assest/portfolio.png)
+
+# PRICE
+![Price Screenshot](public/assest/price.png)
+
+# CONTACT
+![Contact Screenshot](public/assest/contact.png)
 ## 📁 Project Structure
 
 ```
@@ -98,8 +110,8 @@ amit-pal-portfolio/
 ### 1. Download the Files
 
 ```bash
-git clone https://github.com/yourusername/amit-pal-portfolio.git
-cd amit-pal-portfolio
+git clone https://github.com/Amitpal261/Editing-Website.git
+cd EDITING-WEBSITE
 ```
 
 Or simply download `index.html` and open it in your browser.
