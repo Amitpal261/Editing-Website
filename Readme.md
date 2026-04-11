@@ -76,16 +76,16 @@ xdg-open index.html  # Linux
 ## PREVIEW PROJECTS 
 
 # HOME
-![Home Screenshot](public/assest/home.png)
+![Home Screenshot](public/assets/home.png)
 
 # PORTFOLIO
-![Portfolio Screenshot](public/assest/portfolio.png)
+![Portfolio Screenshot](public/assets/portfolio.png)
 
 # PRICE
-![Price Screenshot](public/assest/price.png)
+![Price Screenshot](public/assets/price.png)
 
 # CONTACT
-![Contact Screenshot](public/assest/contact.png)
+![Contact Screenshot](public/assets/contact.png)
 ## 📁 Project Structure
 
 ```
