@@ -1,485 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amit Pal — Video Editor</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;1,9..40,300&family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
- <link rel="stylesheet" href="editing.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;1,9..40,300&family=Playfair+Display:ital@1&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<!-- ═══════════════ NAVBAR ═══════════════ -->
-<nav id="navbar">
-  <div class="nav-logo" onclick="navigate('home')">AMIT<span>.</span>PAL</div>
-  <ul class="nav-links" id="navLinks">
-    <li><a onclick="navigate('home')" data-page="home" class="active">Home</a></li>
-    <li><a onclick="navigate('portfolio')" data-page="portfolio">Portfolio</a></li>
-    <li><a onclick="navigate('pricing')" data-page="pricing">Pricing</a></li>
-    <li><a onclick="navigate('contact')" data-page="contact" class="nav-cta">Hire Me</a></li>
-  </ul>
-  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <nav id="navbar">
+    <div class="nav-logo" onclick="navigate('home')">AMIT<span>.</span>PAL</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a onclick="navigate('home')" data-page="home" class="active">Home</a></li>
+      <li><a onclick="navigate('portfolio')" data-page="portfolio">Portfolio</a></li>
+      <li><a onclick="navigate('pricing')" data-page="pricing">Pricing</a></li>
+      <li><a onclick="navigate('contact')" data-page="contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
 
-<!-- ═══════════════ PAGE: HOME ═══════════════ -->
-<div class="page active" id="page-home">
+  <!-- ═══════════════ PAGE: HOME ═══════════════ -->
+  <div class="page active" id="page-home">
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-reel-badge">
-  <div class="badge-inner">
-    <video src="https://res.cloudinary.com/dmtcpwldk/video/upload/v1775586318/My-Video2_pyepj0.mp4" muted autoplay loop playsinline></video>
-  </div>
-</div>
-    <div class="hero-content">
-      <p class="hero-label">Available for Projects</p>
-      <h1 class="hero-title">
-        AMIT<br>
-        PAL<br>
-        <em>Editor</em>
-      </h1>
-      <p class="hero-sub">Crafting cinematic stories through rhythm, color, and motion. Based in India — working worldwide.</p>
-      <div class="hero-actions">
-        <button class="btn-primary" onclick="navigate('portfolio')">▶ View My Work</button>
-        <button class="btn-ghost" onclick="navigate('contact')">Start a Project</button>
-      </div>
-    </div>
-    <div class="hero-stats">
-      <div class="stat">
-        <div class="stat-num">50<span>+</span></div>
-        <div class="stat-label">Projects Done</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">4<span>+</span></div>
-        <div class="stat-label">Years Experience</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MARQUEE -->
-  <div class="marquee-wrap">
-    <div class="marquee-track">
-      <span>Adobe Premiere Pro</span><span class="dot">·</span>
-      <span>After Effects</span><span class="dot">·</span>
-      <span>DaVinci Resolve</span><span class="dot">·</span>
-      <span>Color Grading</span><span class="dot">·</span>
-      <span>Motion Graphics</span><span class="dot">·</span>
-      <span>Sound Design</span><span class="dot">·</span>
-      <span>YouTube Videos</span><span class="dot">·</span>
-      <span>Instagram Reels</span><span class="dot">·</span>
-      <span>Corporate Films</span><span class="dot">·</span>
-      <span>Adobe Premiere Pro</span><span class="dot">·</span>
-      <span>After Effects</span><span class="dot">·</span>
-      <span>DaVinci Resolve</span><span class="dot">·</span>
-      <span>Color Grading</span><span class="dot">·</span>
-      <span>Motion Graphics</span><span class="dot">·</span>
-      <span>Sound Design</span><span class="dot">·</span>
-      <span>YouTube Videos</span><span class="dot">·</span>
-      <span>Instagram Reels</span><span class="dot">·</span>
-      <span>Corporate Films</span><span class="dot">·</span>
-    </div>
-  </div>
-
-  <!-- ABOUT STRIP -->
-  <div class="about-strip">
-    <div class="about-img">
-      <video class="video" src="https://res.cloudinary.com/dmtcpwldk/video/upload/v1775586318/My-Video2_pyepj0.mp4" autoplay muted loop>My Image</video>
-      <div class="about-img-overlay">
-        
-      </div>
-      <div style="width:100%;height:100%;min-height:520px;display:flex;align-items:center;justify-content:center;">
-        <div style="font-family:var(--font-head);font-size:8rem;color:rgba(232,81,42,0.15);letter-spacing:0.05em;">AP</div>
-      </div>
-    </div>
-    <div class="about-text reveal">
-      <p class="section-label">About Me</p>
-      <h2 class="section-title">TELLING<br>STORIES<br>FRAME BY<br>FRAME</h2>
-      <p class="about-body">Hi, I'm Amit Pal — a passionate video editor with a sharp eye for storytelling and visual rhythm. Over the past few years, I've worked on projects ranging from YouTube vlogs and short films to corporate promos and social media content.</p>
-      <p class="about-body">I believe every video has a story to tell, and my job is to make that story unforgettable.</p>
-      <div class="tools-list">
-        <span class="tool-tag">Premiere Pro</span>
-        <span class="tool-tag">After Effects</span>
-        <span class="tool-tag">DaVinci Resolve</span>
-        <span class="tool-tag">Photoshop</span>
-        <span class="tool-tag">Audition</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- SERVICES -->
-  <section class="services-section">
-    <div class="services-header reveal">
-      <div>
-        <p class="section-label">What I Offer</p>
-        <h2 class="section-title">SERVICES</h2>
-      </div>
-      <button class="btn-ghost" onclick="navigate('pricing')">See Full Pricing →</button>
-    </div>
-    <div class="services-grid">
-      <div class="service-card reveal">
-        <div class="service-num">01</div>
-        <div class="service-icon">✂️</div>
-        <h3>Short Edit</h3>
-        <p>Perfect for Reels, Shorts, and quick social media clips. Stylish cuts, beat-synced edits, and text effects that make every second count.</p>
-        <div class="service-price">
-          <span class="price-tag">₹499</span>
-          <span class="price-label">Starting from</span>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-reel-badge">
+        <div class="badge-inner">
+          <video src="https://res.cloudinary.com/dmtcpwldk/video/upload/v1775586318/My-Video2_pyepj0.mp4" muted autoplay
+            loop playsinline></video>
         </div>
-        <button class="service-btn" onclick="navigate('contact')">Book Now</button>
       </div>
-      <div class="service-card reveal reveal-delay-1">
-        <div class="service-num">02</div>
-        <div class="service-icon">🎬</div>
-        <h3>Long Edit</h3>
-        <p>Ideal for YouTube videos, interviews, and event coverage. Story-driven edits with clean transitions, balanced audio, and cinematic pacing.</p>
-        <div class="service-price">
-          <span class="price-tag">₹5,999</span>
-          <span class="price-label">Starting from</span>
+      <div class="hero-content">
+        <p class="hero-label">Available for Projects</p>
+        <h1 class="hero-title">
+          AMIT<br>
+          PAL<br>
+          <em>Editor</em>
+        </h1>
+        <p class="hero-sub">Crafting cinematic stories through rhythm, color, and motion. Based in India — working
+          worldwide.</p>
+        <div class="hero-actions">
+          <button class="btn-primary" onclick="navigate('portfolio')">▶ View My Work</button>
+          <button class="btn-ghost" onclick="navigate('contact')">Start a Project</button>
         </div>
-        <button class="service-btn" onclick="navigate('contact')">Book Now</button>
       </div>
-      <div class="service-card reveal reveal-delay-2">
-        <div class="service-num">03</div>
-        <div class="service-icon">🎨</div>
-        <h3>Color Grading</h3>
-        <p>Bring your footage to life with professional color correction. Balanced tones, enhanced contrast, and a consistent visual style.</p>
-        <div class="service-price">
-          <span class="price-tag">₹999</span>
-          <span class="price-label">Starting from</span>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">50<span>+</span></div>
+          <div class="stat-label">Projects Done</div>
         </div>
-        <button class="service-btn" onclick="navigate('contact')">Book Now</button>
+        <div class="stat">
+          <div class="stat-num">4<span>+</span></div>
+          <div class="stat-label">Years Experience</div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PROCESS -->
-  <section class="process-section">
-    <div class="reveal">
-      <p class="section-label">How It Works</p>
-      <h2 class="section-title">MY PROCESS</h2>
-    </div>
-    <div class="process-grid">
-      <div class="process-step reveal">
-        <div class="step-num">01</div>
-        <h4>Briefing</h4>
-        <p>Share your footage, vision, and reference videos. We align on style, tone, and deadlines.</p>
-      </div>
-      <div class="process-step reveal reveal-delay-1">
-        <div class="step-num">02</div>
-        <h4>Editing</h4>
-        <p>I craft the rough cut with pacing, transitions, and initial audio balance in place.</p>
-      </div>
-      <div class="process-step reveal reveal-delay-2">
-        <div class="step-num">03</div>
-        <h4>Revisions</h4>
-        <p>You review and provide feedback. I refine until it's exactly what you envisioned.</p>
-      </div>
-      <div class="process-step reveal reveal-delay-3">
-        <div class="step-num">04</div>
-        <h4>Delivery</h4>
-        <p>Final export in your preferred format — ready to publish anywhere.</p>
+    <!-- MARQUEE -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span>Adobe Premiere Pro</span><span class="dot">·</span>
+        <span>After Effects</span><span class="dot">·</span>
+        <span>DaVinci Resolve</span><span class="dot">·</span>
+        <span>Color Grading</span><span class="dot">·</span>
+        <span>Motion Graphics</span><span class="dot">·</span>
+        <span>Sound Design</span><span class="dot">·</span>
+        <span>YouTube Videos</span><span class="dot">·</span>
+        <span>Instagram Reels</span><span class="dot">·</span>
+        <span>Corporate Films</span><span class="dot">·</span>
+        <span>Adobe Premiere Pro</span><span class="dot">·</span>
+        <span>After Effects</span><span class="dot">·</span>
+        <span>DaVinci Resolve</span><span class="dot">·</span>
+        <span>Color Grading</span><span class="dot">·</span>
+        <span>Motion Graphics</span><span class="dot">·</span>
+        <span>Sound Design</span><span class="dot">·</span>
+        <span>YouTube Videos</span><span class="dot">·</span>
+        <span>Instagram Reels</span><span class="dot">·</span>
+        <span>Corporate Films</span><span class="dot">·</span>
       </div>
     </div>
-  </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="testimonials-section">
-    <div class="reveal" style="text-align:center;">
-      <p class="section-label" style="justify-content:center;">Client Feedback</p>
-      <h2 class="section-title">WHAT CLIENTS<br>SAY</h2>
-    </div>
-    <div class="testimonials-grid">
-      <div class="testimonial-card reveal">
-        <div class="stars">★★★★★</div>
-        <p class="testimonial-text">Amit transformed our raw conference footage into a stunning recap video. Delivered 2 days early with zero revisions needed. Absolutely professional.</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">R</div>
-          <div>
-            <div class="author-name">Rahul Sharma</div>
-            <div class="author-role">YouTube Creator · 200K Subscribers</div>
+    <!-- ABOUT STRIP -->
+    <div class="about-strip">
+      <div class="about-img">
+        <video class="video" src="https://res.cloudinary.com/dmtcpwldk/video/upload/v1775586318/My-Video2_pyepj0.mp4"
+          autoplay muted loop>My Image</video>
+        <div class="about-img-overlay">
+
+        </div>
+        <div style="width:100%;height:100%;min-height:520px;display:flex;align-items:center;justify-content:center;">
+          <div style="font-family:var(--font-head);font-size:8rem;color:rgba(232,81,42,0.15);letter-spacing:0.05em;">AP
           </div>
         </div>
       </div>
-      <div class="testimonial-card reveal reveal-delay-1">
-        <div class="stars">★★★★★</div>
-        <p class="testimonial-text">The color grading work was phenomenal. Our product videos went from flat to cinematic. Our conversion rate improved noticeably after the upgrade.</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">P</div>
-          <div>
-            <div class="author-name">Priya Mehta</div>
-            <div class="author-role">E-commerce Brand Owner</div>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-card reveal reveal-delay-2">
-        <div class="stars">★★★★★</div>
-        <p class="testimonial-text">Fast turnaround and insane attention to detail. Our Reels started getting 10x more engagement after Amit's edits. He understands social media rhythm perfectly.</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">S</div>
-          <div>
-            <div class="author-name">Sneha Joshi</div>
-            <div class="author-role">Instagram Influencer</div>
-          </div>
+      <div class="about-text reveal">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">TELLING<br>STORIES<br>FRAME BY<br>FRAME</h2>
+        <p class="about-body">Hi, I'm Amit Pal — a passionate video editor with a sharp eye for storytelling and visual
+          rhythm. Over the past few years, I've worked on projects ranging from YouTube vlogs and short films to
+          corporate promos and social media content.</p>
+        <p class="about-body">I believe every video has a story to tell, and my job is to make that story unforgettable.
+        </p>
+        <div class="tools-list">
+          <span class="tool-tag">Premiere Pro</span>
+          <span class="tool-tag">After Effects</span>
+          <span class="tool-tag">DaVinci Resolve</span>
+          <span class="tool-tag">Photoshop</span>
+          <span class="tool-tag">Audition</span>
         </div>
       </div>
     </div>
-  </section>
 
-</div><!-- /page-home -->
-
-<!-- ═══════════════ PAGE: PORTFOLIO ═══════════════ -->
-<div class="page" id="page-portfolio">
-
-  <div class="page-hero">
-    <div class="page-hero-content">
-      <p class="section-label">Creative Work</p>
-      <h1 class="page-hero-title">PORTFOLIO</h1>
-      <p class="page-hero-sub">
-        A selection of recent projects across formats and industries.
-      </p>
-    </div>
-  </div>
-
-  <!-- FILTER -->
-  <div class="filter-bar">
-    <button class="filter-btn active" onclick="filterPortfolio('all', this)">All</button>
-    <button class="filter-btn" onclick="filterPortfolio('short', this)">Short Form</button>
-    <button class="filter-btn" onclick="filterPortfolio('long', this)">Long Form</button>
-    <button class="filter-btn" onclick="filterPortfolio('color', this)">Color Grading</button>
-    <button class="filter-btn" onclick="filterPortfolio('corporate', this)">Corporate</button>
-  </div>
-
-  <!-- GRID -->
-  <div class="portfolio-grid" id="portfolioGrid"></div>
-</div>
-
-<!-- 🎬 FULLSCREEN MODAL -->
-<div class="video-modal" id="videoModal">
-  <span class="close-modal" onclick="closeModal()">✕</span>
-  <video id="modalVideo" controls autoplay></video>
-</div>
-
-<!-- ═══════════════ PAGE: PRICING ═══════════════ -->
-<div class="page" id="page-pricing">
-  <div class="page-hero">
-    <div class="page-hero-content">
-      <p class="section-label">Transparent Pricing</p>
-      <h1 class="page-hero-title">PLANS &<br>PRICING</h1>
-      <p class="page-hero-sub">No hidden fees. Pick what works for your project.</p>
-    </div>
-  </div>
-
-  <div class="pricing-section">
-    <div class="pricing-toggle" id="pricingToggle">
-      <span class="toggle-label">Monthly</span>
-      <div class="toggle-switch" id="toggleSwitch" onclick="togglePricing()">
-        <div class="toggle-knob"></div>
-      </div>
-      <span class="toggle-label">Bundle</span>
-      <span class="save-badge">Save 20%</span>
-    </div>
-
-    <div class="pricing-grid">
-      <div class="pricing-card reveal">
-        <div class="pricing-tier">Starter</div>
-        <div class="pricing-amount" id="p1"><sub>₹</sub>499</div>
-        <p class="pricing-desc">Perfect for a single short-form clip or Reel.</p>
-        <ul class="pricing-features">
-          <li><span class="check">✓</span> Up to 60 seconds</li>
-          <li><span class="check">✓</span> 1 revision round</li>
-          <li><span class="check">✓</span> Background music sync</li>
-          <li><span class="check">✓</span> Basic text & transitions</li>
-          <li><span class="cross">✗</span> Color grading</li>
-          <li><span class="cross">✗</span> Motion graphics</li>
-        </ul>
-        <button class="pricing-cta outline" onclick="navigate('contact')">Get Started</button>
-      </div>
-
-      <div class="pricing-card featured reveal reveal-delay-1">
-        <div class="pricing-badge">Most Popular</div>
-        <div class="pricing-tier">Creator</div>
-        <div class="pricing-amount" id="p2"><sub>₹</sub>2,999</div>
-        <p class="pricing-desc">Ideal for YouTubers and content creators.</p>
-        <ul class="pricing-features">
-          <li><span class="check">✓</span> Up to 15 minutes</li>
-          <li><span class="check">✓</span> 3 revision rounds</li>
-          <li><span class="check">✓</span> Color correction</li>
-          <li><span class="check">✓</span> Custom thumbnails (1)</li>
-          <li><span class="check">✓</span> Sound design & mixing</li>
-          <li><span class="cross">✗</span> Motion graphics</li>
-        </ul>
-        <button class="pricing-cta solid" onclick="navigate('contact')">Get Started</button>
-      </div>
-
-      <div class="pricing-card reveal reveal-delay-2">
-        <div class="pricing-tier">Pro</div>
-        <div class="pricing-amount" id="p3"><sub>₹</sub>5,999</div>
-        <p class="pricing-desc">Full-service for brands and serious creators.</p>
-        <ul class="pricing-features">
-          <li><span class="check">✓</span> Unlimited length</li>
-          <li><span class="check">✓</span> Unlimited revisions</li>
-          <li><span class="check">✓</span> Full color grading</li>
-          <li><span class="check">✓</span> Motion graphics</li>
-          <li><span class="check">✓</span> Subtitles / captions</li>
-          <li><span class="check">✓</span> Priority delivery</li>
-        </ul>
-        <button class="pricing-cta outline" onclick="navigate('contact')">Get Started</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- FAQ -->
-  <section class="faq-section">
-    <div style="text-align:center;">
-      <p class="section-label" style="justify-content:center;">Got Questions?</p>
-      <h2 class="section-title" style="text-align:center;">FAQ</h2>
-    </div>
-    <div class="faq-list" id="faqList">
-      <!-- items injected by JS -->
-    </div>
-  </section>
-</div>
-
-<!-- ═══════════════ PAGE: CONTACT ═══════════════ -->
-<div class="page" id="page-contact">
-  <div style="margin-top: var(--nav-h);">
-    <div class="contact-section">
-      <div class="contact-left">
-        <div class="contact-left-top">
-          <p class="section-label">Let's Work Together</p>
-          <h2>LET'S<br>CREATE<br>SOMETHING<br>GREAT</h2>
-          <p>Have a project in mind? Fill out the form and I'll get back to you within 24 hours.</p>
-          <div class="contact-info-list">
-            <div class="contact-info-item">
-              <div class="info-icon">📧</div>
-              <div>
-                <div class="info-label">Email</div>
-                <div class="info-value">amitpal@email.com</div>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <div class="info-icon">📞</div>
-              <div>
-                <div class="info-label">Phone</div>
-                <div class="info-value">+91 98765 43210</div>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <div class="info-icon">📍</div>
-              <div>
-                <div class="info-label">Location</div>
-                <div class="info-value">India (Remote Worldwide)</div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- SERVICES -->
+    <section class="services-section">
+      <div class="services-header reveal">
         <div>
-          <div class="social-links">
-            <div class="social-link" title="Instagram">📸</div>
-            <div class="social-link" title="YouTube">▶</div>
-            <div class="social-link" title="LinkedIn">in</div>
-            <div class="social-link" title="Twitter/X">𝕏</div>
+          <p class="section-label">What I Offer</p>
+          <h2 class="section-title">SERVICES</h2>
+        </div>
+        <button class="btn-ghost" onclick="navigate('pricing')">See Full Pricing →</button>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-num">01</div>
+          <div class="service-icon">✂️</div>
+          <h3>Short Edit</h3>
+          <p>Perfect for Reels, Shorts, and quick social media clips. Stylish cuts, beat-synced edits, and text effects
+            that make every second count.</p>
+          <div class="service-price">
+            <span class="price-tag">₹499</span>
+            <span class="price-label">Starting from</span>
+          </div>
+          <button class="service-btn" onclick="navigate('contact')">Book Now</button>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-num">02</div>
+          <div class="service-icon">🎬</div>
+          <h3>Long Edit</h3>
+          <p>Ideal for YouTube videos, interviews, and event coverage. Story-driven edits with clean transitions,
+            balanced audio, and cinematic pacing.</p>
+          <div class="service-price">
+            <span class="price-tag">₹5,999</span>
+            <span class="price-label">Starting from</span>
+          </div>
+          <button class="service-btn" onclick="navigate('contact')">Book Now</button>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-num">03</div>
+          <div class="service-icon">🎨</div>
+          <h3>Color Grading</h3>
+          <p>Bring your footage to life with professional color correction. Balanced tones, enhanced contrast, and a
+            consistent visual style.</p>
+          <div class="service-price">
+            <span class="price-tag">₹999</span>
+            <span class="price-label">Starting from</span>
+          </div>
+          <button class="service-btn" onclick="navigate('contact')">Book Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process-section">
+      <div class="reveal">
+        <p class="section-label">How It Works</p>
+        <h2 class="section-title">MY PROCESS</h2>
+      </div>
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <div class="step-num">01</div>
+          <h4>Briefing</h4>
+          <p>Share your footage, vision, and reference videos. We align on style, tone, and deadlines.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-1">
+          <div class="step-num">02</div>
+          <h4>Editing</h4>
+          <p>I craft the rough cut with pacing, transitions, and initial audio balance in place.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-2">
+          <div class="step-num">03</div>
+          <h4>Revisions</h4>
+          <p>You review and provide feedback. I refine until it's exactly what you envisioned.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-3">
+          <div class="step-num">04</div>
+          <h4>Delivery</h4>
+          <p>Final export in your preferred format — ready to publish anywhere.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section">
+      <div class="reveal" style="text-align:center;">
+        <p class="section-label" style="justify-content:center;">Client Feedback</p>
+        <h2 class="section-title">WHAT CLIENTS<br>SAY</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">Amit transformed our raw conference footage into a stunning recap video. Delivered
+            2 days early with zero revisions needed. Absolutely professional.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">R</div>
+            <div>
+              <div class="author-name">Rahul Sharma</div>
+              <div class="author-role">YouTube Creator · 200K Subscribers</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">The color grading work was phenomenal. Our product videos went from flat to
+            cinematic. Our conversion rate improved noticeably after the upgrade.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">P</div>
+            <div>
+              <div class="author-name">Priya Mehta</div>
+              <div class="author-role">E-commerce Brand Owner</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">Fast turnaround and insane attention to detail. Our Reels started getting 10x more
+            engagement after Amit's edits. He understands social media rhythm perfectly.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">S</div>
+            <div>
+              <div class="author-name">Sneha Joshi</div>
+              <div class="author-role">Instagram Influencer</div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="contact-right">
-        <p class="section-label">Send a Message</p>
-        <h3 style="font-family:var(--font-head);font-size:2rem;color:var(--white);letter-spacing:0.04em;margin-bottom:36px;">START YOUR<br>PROJECT</h3>
-        <div class="contact-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label">Your Name</label>
-              <input type="text" class="form-input" placeholder="Rahul Sharma" id="fname">
+  </div><!-- /page-home -->
+
+  <!-- ═══════════════ PAGE: PORTFOLIO ═══════════════ -->
+  <div class="page" id="page-portfolio">
+
+    <div class="page-hero">
+      <div class="page-hero-content">
+        <p class="section-label">Creative Work</p>
+        <h1 class="page-hero-title">PORTFOLIO</h1>
+        <p class="page-hero-sub">
+          A selection of recent projects across formats and industries.
+        </p>
+      </div>
+    </div>
+
+    <!-- FILTER -->
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterPortfolio('all', this)">All</button>
+      <button class="filter-btn" onclick="filterPortfolio('short', this)">Short Form</button>
+      <button class="filter-btn" onclick="filterPortfolio('long', this)">Long Form</button>
+      <button class="filter-btn" onclick="filterPortfolio('color', this)">Color Grading</button>
+      <button class="filter-btn" onclick="filterPortfolio('corporate', this)">Corporate</button>
+    </div>
+
+    <!-- GRID -->
+    <div class="portfolio-grid" id="portfolioGrid"></div>
+  </div>
+
+  <!-- 🎬 FULLSCREEN MODAL -->
+  <div class="video-modal" id="videoModal">
+    <span class="close-modal" onclick="closeModal()">✕</span>
+    <video id="modalVideo" controls autoplay></video>
+  </div>
+
+  <!-- ═══════════════ PAGE: PRICING ═══════════════ -->
+  <div class="page" id="page-pricing">
+    <div class="page-hero">
+      <div class="page-hero-content">
+        <p class="section-label">Transparent Pricing</p>
+        <h1 class="page-hero-title">PLANS &<br>PRICING</h1>
+        <p class="page-hero-sub">No hidden fees. Pick what works for your project.</p>
+      </div>
+    </div>
+
+    <div class="pricing-section">
+      <div class="pricing-toggle" id="pricingToggle">
+        <span class="toggle-label">Monthly</span>
+        <div class="toggle-switch" id="toggleSwitch" onclick="togglePricing()">
+          <div class="toggle-knob"></div>
+        </div>
+        <span class="toggle-label">Bundle</span>
+        <span class="save-badge">Save 20%</span>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="pricing-tier">Starter</div>
+          <div class="pricing-amount" id="p1"><sub>₹</sub>499</div>
+          <p class="pricing-desc">Perfect for a single short-form clip or Reel.</p>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Up to 60 seconds</li>
+            <li><span class="check">✓</span> 1 revision round</li>
+            <li><span class="check">✓</span> Background music sync</li>
+            <li><span class="check">✓</span> Basic text & transitions</li>
+            <li><span class="cross">✗</span> Color grading</li>
+            <li><span class="cross">✗</span> Motion graphics</li>
+          </ul>
+          <button class="pricing-cta outline" onclick="navigate('contact')">Get Started</button>
+        </div>
+
+        <div class="pricing-card featured reveal reveal-delay-1">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-tier">Creator</div>
+          <div class="pricing-amount" id="p2"><sub>₹</sub>2,999</div>
+          <p class="pricing-desc">Ideal for YouTubers and content creators.</p>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Up to 15 minutes</li>
+            <li><span class="check">✓</span> 3 revision rounds</li>
+            <li><span class="check">✓</span> Color correction</li>
+            <li><span class="check">✓</span> Custom thumbnails (1)</li>
+            <li><span class="check">✓</span> Sound design & mixing</li>
+            <li><span class="cross">✗</span> Motion graphics</li>
+          </ul>
+          <button class="pricing-cta solid" onclick="navigate('contact')">Get Started</button>
+        </div>
+
+        <div class="pricing-card reveal reveal-delay-2">
+          <div class="pricing-tier">Pro</div>
+          <div class="pricing-amount" id="p3"><sub>₹</sub>5,999</div>
+          <p class="pricing-desc">Full-service for brands and serious creators.</p>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Unlimited length</li>
+            <li><span class="check">✓</span> Unlimited revisions</li>
+            <li><span class="check">✓</span> Full color grading</li>
+            <li><span class="check">✓</span> Motion graphics</li>
+            <li><span class="check">✓</span> Subtitles / captions</li>
+            <li><span class="check">✓</span> Priority delivery</li>
+          </ul>
+          <button class="pricing-cta outline" onclick="navigate('contact')">Get Started</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div style="text-align:center;">
+        <p class="section-label" style="justify-content:center;">Got Questions?</p>
+        <h2 class="section-title" style="text-align:center;">FAQ</h2>
+      </div>
+      <div class="faq-list" id="faqList">
+        <!-- items injected by JS -->
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════ PAGE: CONTACT ═══════════════ -->
+  <div class="page" id="page-contact">
+    <div style="margin-top: var(--nav-h);">
+      <div class="contact-section">
+        <div class="contact-left">
+          <div class="contact-left-top">
+            <p class="section-label">Let's Work Together</p>
+            <h2>LET'S<br>CREATE<br>SOMETHING<br>GREAT</h2>
+            <p>Have a project in mind? Fill out the form and I'll get back to you within 24 hours.</p>
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <div class="info-icon">📧</div>
+                <div>
+                  <div class="info-label">Email</div>
+                  <div class="info-value">amitpal@email.com</div>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="info-icon">📞</div>
+                <div>
+                  <div class="info-label">Phone</div>
+                  <div class="info-value">+91 98765 43210</div>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="info-icon">📍</div>
+                <div>
+                  <div class="info-label">Location</div>
+                  <div class="info-value">India (Remote Worldwide)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="social-links">
+              <div class="social-link" title="Instagram">📸</div>
+              <div class="social-link" title="YouTube">▶</div>
+              <div class="social-link" title="LinkedIn">in</div>
+              <div class="social-link" title="Twitter/X">𝕏</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <p class="section-label">Send a Message</p>
+          <h3
+            style="font-family:var(--font-head);font-size:2rem;color:var(--white);letter-spacing:0.04em;margin-bottom:36px;">
+            START YOUR<br>PROJECT</h3>
+          <div class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Your Name</label>
+                <input type="text" class="form-input" placeholder="Rahul Sharma" id="fname">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-input" placeholder="rahul@example.com" id="femail">
+              </div>
             </div>
             <div class="form-group">
-              <label class="form-label">Email Address</label>
-              <input type="email" class="form-input" placeholder="rahul@example.com" id="femail">
+              <label class="form-label">Service Needed</label>
+              <select class="form-select" id="fservice">
+                <option value="" disabled selected>Select a service</option>
+                <option>Short Edit (₹499+)</option>
+                <option>Long Edit (₹5,999+)</option>
+                <option>Color Grading (₹999+)</option>
+                <option>Full Package (Custom)</option>
+              </select>
             </div>
+            <div class="form-group">
+              <label class="form-label">Project Budget</label>
+              <select class="form-select" id="fbudget">
+                <option value="" disabled selected>Select budget range</option>
+                <option>Under ₹1,000</option>
+                <option>₹1,000 – ₹5,000</option>
+                <option>₹5,000 – ₹15,000</option>
+                <option>₹15,000+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Tell Me About Your Project</label>
+              <textarea class="form-textarea"
+                placeholder="Describe your project, timeline, references, and any specific requirements..."
+                id="fmessage"></textarea>
+            </div>
+            <div class="form-success" id="formSuccess">
+              ✅ Thanks! I'll get back to you within 24 hours.
+            </div>
+            <button class="form-submit" onclick="submitForm()">Send Message →</button>
           </div>
-          <div class="form-group">
-            <label class="form-label">Service Needed</label>
-            <select class="form-select" id="fservice">
-              <option value="" disabled selected>Select a service</option>
-              <option>Short Edit (₹499+)</option>
-              <option>Long Edit (₹5,999+)</option>
-              <option>Color Grading (₹999+)</option>
-              <option>Full Package (Custom)</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Project Budget</label>
-            <select class="form-select" id="fbudget">
-              <option value="" disabled selected>Select budget range</option>
-              <option>Under ₹1,000</option>
-              <option>₹1,000 – ₹5,000</option>
-              <option>₹5,000 – ₹15,000</option>
-              <option>₹15,000+</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Tell Me About Your Project</label>
-            <textarea class="form-textarea" placeholder="Describe your project, timeline, references, and any specific requirements..." id="fmessage"></textarea>
-          </div>
-          <div class="form-success" id="formSuccess">
-            ✅ Thanks! I'll get back to you within 24 hours.
-          </div>
-          <button class="form-submit" onclick="submitForm()">Send Message →</button>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- ═══════════════ FOOTER (shared) ═══════════════ -->
-<footer id="mainFooter">
-  <div class="footer-top">
-    <div class="footer-brand">
-      <div class="nav-logo">AMIT<span style="color:var(--accent)">.</span>PAL</div>
-      <p>Professional video editor specializing in cinematic storytelling, color grading, and social media content. Based in India — working worldwide.</p>
+  <!-- ═══════════════ FOOTER (shared) ═══════════════ -->
+  <footer id="mainFooter">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">AMIT<span style="color:var(--accent)">.</span>PAL</div>
+        <p>Professional video editor specializing in cinematic storytelling, color grading, and social media content.
+          Based in India — working worldwide.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Pages</h5>
+        <ul>
+          <li><a onclick="navigate('home')">Home</a></li>
+          <li><a onclick="navigate('portfolio')">Portfolio</a></li>
+          <li><a onclick="navigate('pricing')">Pricing</a></li>
+          <li><a onclick="navigate('contact')">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a>Short Edit</a></li>
+          <li><a>Long Edit</a></li>
+          <li><a>Color Grading</a></li>
+          <li><a>Motion Graphics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a>Instagram</a></li>
+          <li><a>YouTube</a></li>
+          <li><a>LinkedIn</a></li>
+          <li><a>amitpal@email.com</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-col">
-      <h5>Pages</h5>
-      <ul>
-        <li><a onclick="navigate('home')">Home</a></li>
-        <li><a onclick="navigate('portfolio')">Portfolio</a></li>
-        <li><a onclick="navigate('pricing')">Pricing</a></li>
-        <li><a onclick="navigate('contact')">Contact</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <p>© 2025 <span>Amit Pal</span>. All rights reserved.</p>
+      <p>Built By <span>Amit Pal</span></p>
     </div>
-    <div class="footer-col">
-      <h5>Services</h5>
-      <ul>
-        <li><a>Short Edit</a></li>
-        <li><a>Long Edit</a></li>
-        <li><a>Color Grading</a></li>
-        <li><a>Motion Graphics</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h5>Connect</h5>
-      <ul>
-        <li><a>Instagram</a></li>
-        <li><a>YouTube</a></li>
-        <li><a>LinkedIn</a></li>
-        <li><a>amitpal@email.com</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2025 <span>Amit Pal</span>. All rights reserved.</p>
-    <p>Built By <span>Amit Pal</span></p>
-  </div>
-</footer>
+  </footer>
 
-<!-- BACK TO TOP -->
-<div class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
-<script src="editing.js"></script>
+  <!-- BACK TO TOP -->
+  <div class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+  <script src="script.js"></script>
 
 </body>
+
 </html>
