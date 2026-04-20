@@ -79,13 +79,13 @@ xdg-open index.html  # Linux
 ![Home Screenshot](public/assest/home.png)
 
 # PORTFOLIO
-![Portfolio Screenshot](public/assets/portfolio.png)
+![Portfolio Screenshot](public/assest/portfolio.png)
 
 # PRICE
-![Price Screenshot](public/assets/price.png)
+![Price Screenshot](public/assest/price.png)
 
 # CONTACT
-![Contact Screenshot](public/assets/contact.png)
+![Contact Screenshot](public/assest/contact.png)
 ## 📁 Project Structure
 
 ```
