@@ -7,7 +7,7 @@
 
 ## 📋 Table of Contents
 
-- [Live Preview](#live-preview)
+- [Live Preview](https://amiteditz.vercel.app/)
 - [Features](#features)
 - [Pages](#pages)
 - [Project Structure](#project-structure)
