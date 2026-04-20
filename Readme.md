@@ -76,7 +76,7 @@ xdg-open index.html  # Linux
 ## PREVIEW PROJECTS 
 
 # HOME
-![Home Screenshot](public/assets/home.png)
+![Home Screenshot](public/assest/home.png)
 
 # PORTFOLIO
 ![Portfolio Screenshot](public/assets/portfolio.png)
